@@ -1,0 +1,35 @@
+@import "shared/_variables";
+@import "shared/_bootstrap";
+
+/*-------------------*/
+
+@import "shared/_reset";
+@import "shared/_fonts";
+
+/*-----------------------*/
+
+@import "shared/_header";
+
+/*-----------------------*/
+
+@import "modules/owl/_owl.carousel";
+@import "modules/owl/_owl.theme.default";
+@import "modules/jquery.mobile-1.4.5.min.css";
+
+/*-------------------*/
+
+@import "modules/_about";
+@import "modules/_blog";
+@import "modules/_home";
+@import "modules/_teams";
+@import "modules/_contact-us";
+@import "modules/_services";
+
+/*-----------------------*/
+
+@import "shared/_footer";
+
+/*-----------------------*/
+
+@import "shared/_tablet.scss";
+@import "shared/_mobile.scss";

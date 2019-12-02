@@ -1,0 +1,141 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+select,
+option {
+  border: 0;
+  vertical-align: baseline;
+  float: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: normal;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+}
+
+::selection {
+}
+
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:active {
+}
+
+::-webkit-input-placeholder {
+}
+
+body {
+  direction: ltr;
+  font-family: $main-font-family;
+}
+a{
+    text-decoration: none;
+}
+
+::selection {
+  background: $main-color;
+  color: #fff;
+  text-shadow: none;
+}
