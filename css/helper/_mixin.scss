@@ -1,0 +1,88 @@
+// mixin for media
+
+@mixin minMedia {
+
+    @media (min-width:992px) {
+
+        @content
+    }
+}
+
+
+
+
+
+// mixin for overlay
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+// mixin for prefixers
+
+@mixin prefixer ($property, $value, $prefixes :()) {
+
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property }: $value;
+    }
+
+    #{$property}: $value;
+}
+
+
+// mixin for animation
+
+
+@mixin keyFrames ($animation-name) {
+    @-webkit-keyFrames #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyFrames #{$animation-name} {
+        @content;
+    }
+
+    @keyFrames #{$animation-name} {
+        @content;
+    }
+}
+
+// mixin for transition 
+
+
+@mixin transition($arg...){
+    -webkit-transition: $arg;
+    -moz-transition: $arg;
+    -o-transition: $arg;
+    transition: $arg;
+}
+
+
+//mixin for opacity 
+
+@mixin opacity($value){
+    zoom: 1;
+    $opacity-ie: $value * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $value;
+}
+
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+  }
+
+
+
+
+
+
