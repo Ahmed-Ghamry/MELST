@@ -1,2 +1,0 @@
-# MELST
-MELST Team Project
