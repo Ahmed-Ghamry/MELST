@@ -1,110 +1,71 @@
+/* ---------- Services --------- */
+#services {
+  padding: 50px 0;
+}
+.service-img {
+  width: 130px;
+  margin-top: 2rem;
+}
 .services {
-    padding: 80px 0;
-    .title {
-        border-right: 20px solid $main-color;
-        text-align: right;
-        padding-right: 50px;
-        height: 150px;
-    }
-    h4 {
-        float: right;
-        color: $main-color;
-    }
-    p {
-        padding: 0 20px;
-        color: #5F5F5E;
-    }
-    .bg-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 300px;
-        margin: 20px;
-        border-radius: 8px 0 8px 0;
-        -webkit-border-radius: 8px 0 8px 0;
-        -moz-border-radius: 8px 0 8px 0;
-        -ms-border-radius: 8px 0 8px 0;
-        -o-border-radius: 8px 0 8px 0;
-    }
-    .bg {
-        background-color: $main-color;
-        padding: 50px 0;
-        .title {
-            border-color: #fff;
-        }
-        h4 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-    }
-    .bg-0 {
-        padding: 50px 0 0;
-    }
-    hr {
-        background-color: $main-color;
-        width: 80%;
-    }
+  padding: 20px;
+}
+.services h4 {
+  padding: 1em;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.title::after {
+  content: "";
+  background: linear-gradient(to right, #71c9f1, #0c4f6e);
+  height: 8px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 70px;
+  transform: translateY(23px);
+}
+#services .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #71c9f1, #0c4f6e);
+  transition: transform 1.2s;
+}
+#services .btn-primary:hover {
+  transform: scale(1.2);
 }
 
-.consulting {
-    padding: 50px 0;
-    h2 {
-        color: $main-color;
-        margin: 20px 0;
+/************use_sasu css start***************/
+.use_sasu {
+  position: relative;
+  z-index: 1;
+  position: relative;
+  padding: 50px 0;
+  .feature_icon_1 {
+    position: absolute;
+    left: 22%;
+    top: 15%;
+    z-index: -1;
+  }
+
+  .single_feature_part {
+    text-align: center;
+    padding: 0 15px;
+    img {
+      margin-bottom: 33px;
+      height: 65px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 22px;
     }
     p {
-        margin: 20px 0;
+      color: $font-color;
+      line-height: 1.8;
+      font-size: 15px;
     }
-    ul {
-        list-style: none;
-        margin: 0 20px;
-        li:before {
-            content: "•";
-            padding-right: 8px;
-            font-size: 20px;
-            color: $main-color;
-        }
-    }
-    .cont {
-        margin: 50px 0;
-        .border {
-            width: 500px;
-            height: 500px;
-            border: 1px solid $main-color !important;
-        }
-        .img {
-            background: url('../img/rawpixel-799380-unsplash.jpg');
-            background-size: cover;
-            width: 500px;
-            height: 500px;
-            border-radius: 8px 0px 8px 0;
-            -webkit-border-radius: 8px 0px 8px 0;
-            -moz-border-radius: 8px 0px 8px 0;
-            -ms-border-radius: 8px 0px 8px 0;
-            -o-border-radius: 8px 0px 8px 0;
-        }
-    }
-    .strengths{
-        padding: 0;
-        h1{
-            width: auto;
-            text-align: left;
-            float: none;
-            margin-left: 0;
-        }
-        .card{
-            border: none;
-            margin: 30px auto;
-            .card-img-top{
-                border-radius: 10px 0 10px 0%;
-            }
-            .card-body{
-                text-align: center;
-            }
-            h5{
-                margin: 0;
-            }
-        }
-    }
+  }
 }

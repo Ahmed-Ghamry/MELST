@@ -1,0 +1,118 @@
+/**********************footer part css*******************/
+.footer_part {
+  background:url("../../assets/img/footer_bg.png");
+  background-size: cover;
+  padding: 130px 0px 25px;
+  img {
+    margin-bottom: 35px;
+  }
+
+  .single_footer_part {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .list-unstyled {
+      li {
+        a {
+          color: $main-color;
+          margin-bottom: 10px;
+          display: inline-block;
+
+          &:hover {
+            color: $main-color !important;
+          }
+        }
+      }
+    }
+
+    .social_icon {
+      float: left;
+      margin-top: 38px;
+      li {
+        a {
+          margin-left: 0;
+          margin-right: 25px;
+        }
+      }
+    }
+
+    .mail_part {
+      position: relative;
+
+      input {
+        padding: 9px 22px;
+        font-size: 13px;
+        border-radius: 50px;
+        border: 2px solid $main-color;
+        margin-top: 20px;
+        width: 100%;
+        background-color: #f9f9fe;
+        border: 1px solid #ebebeb;
+      }
+
+      .email_icon {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        width: 60px;
+        height: 39px;
+        background-color: $main-color;
+        text-align: center;
+        color: #fff;
+        border-radius: 50px;
+        line-height: 10px;
+        border: 2px solid $main-color;
+      }
+    }
+  }
+
+  hr {
+    background-color: #cad7dc;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .footer_icon {
+    text-align: right;
+
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 14px;
+        color: $font-color;
+        margin-left: 30px;
+        :hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .copyright_text {
+    p {
+      color: #888;
+    }
+    span {
+      color: $main-color;
+      font-size: 12px;
+    }
+  }
+
+  .copyright_text p a {
+    color: $main-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  .info {
+    color: red !important;
+  }
+}
