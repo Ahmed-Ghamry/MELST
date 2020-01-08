@@ -1,12 +1,12 @@
 /*
 Error: File to import not found or unreadable: theme.default.
-       Load path: E:/Github/Ahmed-Ghamry/ibits/assets/sass/modules/owl
-        on line 1 of E:\Github\Ahmed-Ghamry\ibits\assets\sass\modules\owl\owl.theme.default.scss
+       Load path: E:/Github/Ahmed-Ghamry/enjazDemo/assets/sass/modules/owl
+        on line 1 of E:\Github\Ahmed-Ghamry\enjazDemo\assets\sass\modules\owl\owl.theme.default.scss
 
 1: @import "theme.default";
 
 Backtrace:
-E:\Github\Ahmed-Ghamry\ibits\assets\sass\modules\owl\owl.theme.default.scss:1
+E:\Github\Ahmed-Ghamry\enjazDemo\assets\sass\modules\owl\owl.theme.default.scss:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -44,4 +44,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: theme.default.\A        Load path: E:/Github/Ahmed-Ghamry/ibits/assets/sass/modules/owl\A         on line 1 of E:\Github\Ahmed-Ghamry\ibits\assets\sass\modules\owl\owl.theme.default.scss\A \A 1: @import \"theme.default\";"; }
+  content: "Error: File to import not found or unreadable: theme.default.\A        Load path: E:/Github/Ahmed-Ghamry/enjazDemo/assets/sass/modules/owl\A         on line 1 of E:\Github\Ahmed-Ghamry\enjazDemo\assets\sass\modules\owl\owl.theme.default.scss\A \A 1: @import \"theme.default\";"; }

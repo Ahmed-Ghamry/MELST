@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800");
-@import url(modules/jquery.mobile-1.4.5.min.css);
 :root {
   --blue:#007bff;
   --indigo:#6610f2;
@@ -6818,97 +6817,32 @@ a {
   text-decoration: none; }
 
 ::selection {
-  background: #137cab;
+  background: #3C68AF;
   color: #fff;
   text-shadow: none; }
 
 /*-----------------------*/
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-#nav-bar {
-  position: sticky;
-  top: 0;
-  z-index: 10; }
-
-.navbar {
-  background: linear-gradient(to right, #71c9f1, #0c4f6e); }
-
-/* Logo resize */
-.navbar-brand img {
-  height: 4rem;
-  padding-left: 3rem; }
-
-.navbar-nav {
-  margin-right: 3rem; }
-
-.navbar-nav li {
-  padding: 0 1rem; }
-
-.navbar-nav li {
-  padding: 0 1rem; }
-
-.navbar-nav .nav-item .nav-link {
-  color: #fff !important;
-  font-weight: 600;
-  float: right;
-  text-align: left; }
-
-.fa-bars {
-  color: #fff !important;
-  font-size: 25px !important; }
-
-.navbar-toggler {
-  outline: none !important; }
-
-/* --------- Banner ---------- */
-.banner {
-  background: linear-gradient(to right, #71c9f1, #0c4f6e);
-  color: #fff;
-  padding-top: 5%; }
-
-.promo-title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-top: 3em; }
-
-.join-title {
-  font-size: 1.44rem; }
-
-.link-play {
-  text-decoration: none; }
-
-.link-play:hover {
-  color: #58f0ff;
-  text-decoration: none !important; }
-
-.play-btn {
-  width: 45px;
-  margin: 20px 0;
-  margin-right: 2em;
-  text-decoration: none !important;
-  transition: transform 1.2s; }
-
-.play-btn:hover {
-  color: #444;
-  text-decoration: none !important;
-  transform: scale(1.2); }
-
-.banner a {
-  color: #fff;
-  text-decoration: none !important; }
-
-.img-fluid {
-  margin-top: 4rem; }
-
-.bottom-img {
-  width: 100%;
-  margin: -8px 0; }
+header .navbar {
+  background: #fff; }
+  header .navbar .active .nav-link {
+    color: #3C68AF; }
+  header .navbar .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    color: #2c2f34; }
+  header .navbar .nav-link.btn {
+    color: #fff;
+    border-radius: 25px;
+    border-color: #007bff;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+    header .navbar .nav-link.btn:hover {
+      background-color: #fff;
+      color: #3C68AF;
+      border-color: #3C68AF; }
 
 /*-----------------------*/
 /**
@@ -7131,217 +7065,136 @@ body {
   background: #869791; }
 
 /*-------------------*/
-.contact-info {
-  margin-bottom: 25px; }
-  .contact-info__icon {
-    margin-right: 20px; }
-    .contact-info__icon i, .contact-info__icon span {
-      color: #8f9195;
-      font-size: 27px; }
-  .contact-info .media-body h4 {
-    font-size: 14px;
-    margin-bottom: 0;
-    color: #2a2a2a; }
-    .contact-info .media-body h4 a:hover {
-      color: #137cab; }
-  .contact-info .media-body p {
-    color: #8a8a8a; }
-
-/*=================== contact form start ====================*/
-.contact-title {
-  font-size: 27px;
-  font-weight: 600;
-  margin-bottom: 20px; }
-
-.form-contact label {
-  font-size: 14px; }
-.form-contact .form-group {
-  margin-bottom: 30px; }
-  .form-contact .form-group .button-contactForm {
-    padding: 5px 5px 5px 20px; }
-  .form-contact .form-group .btn_1 {
-    margin-bottom: -30px;
-    border: 1px solid #999999;
-    border-radius: 0;
-    color: #000;
-    display: flex;
-    align-items: center; }
-    .form-contact .form-group .btn_1 i {
-      color: #7f7f7f;
-      width: 50px;
-      height: 50px;
-      background-color: #137cab;
-      display: inline-block;
-      line-height: 50px;
-      margin-left: 20px;
-      background-size: 200% auto; }
-    .form-contact .form-group .btn_1:hover {
-      border: 1px solid #137cab;
-      color: #137cab !important; }
-      .form-contact .form-group .btn_1:hover i {
-        color: #137cab;
-        color: #fff !important; }
-.form-contact .form-control {
-  border: 1px solid #f0e9ff;
-  border-radius: 5px;
-  height: 48px;
-  padding-left: 18px;
-  font-size: 13px;
-  background: transparent; }
-  .form-contact .form-control:focus {
-    outline: 0;
-    box-shadow: none; }
-  .form-contact .form-control::placeholder {
-    font-weight: 300;
-    color: #999999; }
-.form-contact textarea {
-  border-radius: 12px;
-  height: 100% !important; }
-
-/*=================== contact form end ====================*/
-/* ---------- Services --------- */
-#services {
-  padding: 50px 0; }
-
-.service-img {
-  width: 130px;
-  margin-top: 2rem; }
-
-.services {
-  padding: 20px; }
-
-.services h4 {
-  padding: 1em;
-  margin-top: 5px;
-  text-transform: uppercase; }
-
-.title::after {
-  content: "";
-  background: linear-gradient(to right, #71c9f1, #0c4f6e);
-  height: 8px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 70px;
-  transform: translateY(23px); }
-
-#services .btn-primary {
-  box-shadow: none;
-  padding: 8px 25px;
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(to right, #71c9f1, #0c4f6e);
-  transition: transform 1.2s; }
-
-#services .btn-primary:hover {
-  transform: scale(1.2); }
-
-/************use_sasu css start***************/
-.use_sasu {
-  position: relative;
-  z-index: 1;
-  position: relative;
-  padding: 50px 0; }
-  .use_sasu .feature_icon_1 {
-    position: absolute;
-    left: 22%;
-    top: 15%;
-    z-index: -1; }
-  .use_sasu .single_feature_part {
-    text-align: center;
-    padding: 0 15px; }
-    .use_sasu .single_feature_part img {
-      margin-bottom: 33px;
-      height: 65px; }
-    .use_sasu .single_feature_part h4 {
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 22px; }
-    .use_sasu .single_feature_part p {
-      color: #7f7f7f;
-      line-height: 1.8;
-      font-size: 15px; }
-
-/*-----------------------*/
-/**********************footer part css*******************/
-.footer_part {
-  background: url("../../assets/img/footer_bg.png");
+.banner {
+  background: url("../img/16333.jpg");
+  background-color: rgba(0, 0, 0, 0.512);
+  background-position: center;
   background-size: cover;
-  padding: 130px 0px 25px; }
-  .footer_part img {
-    margin-bottom: 35px; }
-  .footer_part .single_footer_part h4 {
-    font-size: 20px;
-    margin-bottom: 30px;
-    font-weight: 500; }
-  .footer_part .single_footer_part p {
-    margin-bottom: 10px; }
-  .footer_part .single_footer_part .list-unstyled li a {
-    color: #137cab;
-    margin-bottom: 10px;
-    display: inline-block; }
-    .footer_part .single_footer_part .list-unstyled li a:hover {
-      color: #137cab !important; }
-  .footer_part .single_footer_part .social_icon {
-    float: left;
-    margin-top: 38px; }
-    .footer_part .single_footer_part .social_icon li a {
-      margin-left: 0;
-      margin-right: 25px; }
-  .footer_part .single_footer_part .mail_part {
-    position: relative; }
-    .footer_part .single_footer_part .mail_part input {
-      padding: 9px 22px;
-      font-size: 13px;
-      border-radius: 50px;
-      border: 2px solid #137cab;
-      margin-top: 20px;
-      width: 100%;
-      background-color: #f9f9fe;
-      border: 1px solid #ebebeb; }
-    .footer_part .single_footer_part .mail_part .email_icon {
-      position: absolute;
-      right: 0px;
-      top: 20px;
-      width: 60px;
-      height: 39px;
-      background-color: #137cab;
-      text-align: center;
+  background-blend-mode: darken;
+  padding: 150px 0;
+  text-align: center; }
+  .banner .url p a {
+    color: #fff; }
+  .banner .url p span {
+    color: #ccccccb8; }
+  .banner .url-title h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 20px 0; }
+
+/*****  start about *******/
+.about .about-desc {
+  padding: 120px 50px; }
+  .about .about-desc p {
+    margin: 30px 0; }
+.about .mission {
+  margin-bottom: 50px; }
+  .about .mission h3 {
+    margin-bottom: 20px; }
+.about .vision {
+  margin-bottom: 50px;
+  padding-left: 50px; }
+  .about .vision h3 {
+    margin-bottom: 20px; }
+.about .goals h3 {
+  margin-bottom: 20px; }
+.about .goals ul {
+  padding-left: 20px; }
+.about .values {
+  padding-left: 50px; }
+  .about .values h3 {
+    margin-bottom: 20px; }
+  .about .values ul {
+    padding-left: 20px; }
+
+/********   start portifolio *******/
+.potrifolio {
+  margin-top: 50px;
+  border-bottom: 2px solid #fff; }
+  .potrifolio .port-img {
+    position: relative;
+    overflow: hidden; }
+    .potrifolio .port-img img {
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out; }
+      .potrifolio .port-img img:hover {
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3); }
+  .potrifolio .port-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0; }
+    .potrifolio .port-text h2 {
       color: #fff;
-      border-radius: 50px;
-      line-height: 10px;
-      border: 2px solid #137cab; }
-  .footer_part hr {
-    background-color: #cad7dc;
-    margin-top: 50px;
-    margin-bottom: 25px; }
-  .footer_part .footer_icon {
-    text-align: right; }
-    .footer_part .footer_icon li {
-      display: inline-block; }
-      .footer_part .footer_icon li a {
-        font-size: 14px;
-        color: #7f7f7f;
-        margin-left: 30px; }
-        .footer_part .footer_icon li a :hover {
-          color: #137cab; }
-  .footer_part .copyright_text p {
-    color: #888; }
-  .footer_part .copyright_text span {
-    color: #137cab;
-    font-size: 12px; }
-  .footer_part .copyright_text p a {
-    color: #137cab; }
-    .footer_part .copyright_text p a:hover {
-      color: #137cab; }
-  .footer_part .info {
-    color: red !important; }
+      font-weight: bold; }
+
+/*-----------------------*/
+footer {
+  background-image: linear-gradient(#3c68af, #5271a5);
+  padding: 120px;
+  color: #fff; }
+  footer .text h5 {
+    margin-bottom: 30px; }
+  footer .text .disc .list-group-item {
+    padding: 0.5rem 0;
+    border: none;
+    background: none; }
+  footer .text .social {
+    margin-top: 30px; }
+    footer .text .social .nav-link {
+      color: #fff;
+      font-size: 30px; }
 
 /*-----------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px) and (min-width: 168px) {
+  .about .about-desc {
+    padding: 50px 13px;
+    text-align: center; }
+    .about .about-desc p {
+      margin: 30px 0; }
+  .about .mission {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px; }
+    .about .mission h3 {
+      margin-bottom: 20px; }
+  .about .vision {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px; }
+    .about .vision h3 {
+      margin-bottom: 20px; }
+  .about .goals {
+    margin-bottom: 20px;
+    padding: 20px; }
+    .about .goals h3 {
+      margin-bottom: 20px; }
+    .about .goals ul {
+      padding-left: 18px; }
+  .about .values {
+    padding-left: 0px;
+    padding: 20px; }
+    .about .values h3 {
+      margin-bottom: 20px; }
+    .about .values ul {
+      padding-left: 18px; }
+
+  footer {
+    padding: 50px 15px; }
+    footer .text {
+      margin-bottom: 50px; } }
 /*------------------------------------------------*/
 /*------------------------------------------------------*/
 /*-------------------------------------------------*/
